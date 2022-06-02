@@ -34,6 +34,13 @@ function MyApp({ Component, pageProps }) {
       <Link href="/profile">
         <span className="mr-6 cursor-pointer">Profile</span>
       </Link>
+      {
+        user && (
+          <Link href="/my-posts">
+            <span className="mr-6 cursor-pointer">My Posts</span>
+          </Link>
+        )
+      }
     </nav>
     <div className="py-8 px-16">
       <Component {...pageProps} />
